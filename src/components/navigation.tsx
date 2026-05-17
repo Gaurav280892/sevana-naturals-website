@@ -35,7 +35,7 @@ export function Navigation() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <nav className="flex items-center justify-between h-20">
+        <nav className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link href="/" className="relative z-50">
             <motion.div
@@ -46,9 +46,9 @@ export function Navigation() {
               <Image
                 src="/images/logo.svg"
                 alt="Sevana Naturals"
-                width={200}
-                height={200}
-                className={`h-12 w-auto transition-all duration-300 ${
+                width={280}
+                height={280}
+                className={`h-20 w-auto transition-all duration-300 ${
                   scrolled || isOpen ? "" : "invert"
                 }`}
                 priority
