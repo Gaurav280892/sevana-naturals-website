@@ -73,7 +73,7 @@ const products = [
         name: "Ruh Khus",
         latin: "Vetiveria zizanioides",
         desc: "Wild-harvested North Indian vetiver root oil — traditionally distilled in copper degs. Earthy, woody, and profoundly grounding. Unlike any vetiver from other origins.",
-        tags: ["Fine Fragrance", "Attar"],
+        tags: ["Fine Fragrance", "Specialty"],
       },
       {
         name: "Davana Absolute",
@@ -86,37 +86,6 @@ const products = [
         latin: "Tagetes minuta",
         desc: "African marigold — green, herbaceous, and slightly fruity. Used as a modifier in floral compositions and for its unique olfactive character.",
         tags: ["Perfumery"],
-      },
-    ],
-  },
-  {
-    category: "Attars & Florals",
-    description:
-      "Traditional Kannauj attars and floral absolutes — the soul of Indian perfumery.",
-    items: [
-      {
-        name: "Rose Attar",
-        latin: "Rosa damascena",
-        desc: "Traditional Kannauj rose attar — rose petals distilled into sandalwood oil using the deg-bhapka method. Rich, honeyed, and unmistakably Indian.",
-        tags: ["Attar", "Fine Fragrance"],
-      },
-      {
-        name: "Jasmine Sambac",
-        latin: "Jasminum sambac",
-        desc: "Mogra absolute — intensely sweet, creamy, and intoxicating. Hand-picked at dawn, solvent-extracted for maximum potency.",
-        tags: ["Fine Fragrance", "Attar"],
-      },
-      {
-        name: "Tuberose Absolute",
-        latin: "Polianthes tuberosa",
-        desc: "Rich, narcotic, and intensely floral. Extracted from Indian-grown tuberose flowers. Essential for white floral compositions.",
-        tags: ["Fine Fragrance"],
-      },
-      {
-        name: "Mitti Attar",
-        latin: "Earth attar",
-        desc: "The scent of first rain on dry earth — captured through traditional distillation of baked clay into sandalwood. Uniquely Indian, irreplaceable.",
-        tags: ["Attar", "Niche"],
       },
     ],
   },
@@ -144,7 +113,7 @@ export default function PortfolioPage() {
               <span className="italic font-normal">aromatics.</span>
             </h1>
             <p className="mt-8 text-ink-soft max-w-xl leading-relaxed">
-              A focused selection of essential oils, attars, and aromatic raw
+              A focused selection of essential oils and aromatic raw
               materials — sourced from India&apos;s historic distillation regions
               and evaluated to the perfumer&apos;s standard.
             </p>

@@ -46,7 +46,7 @@ export function HeroSection() {
           >
             <span className="w-12 h-px bg-secondary" />
             <span className="text-xs font-medium tracking-[0.3em] uppercase text-cream/80">
-              Essential Oils &middot; Attars &middot; Aromatics
+              Essential Oils &middot; Aromatics
             </span>
             <span className="w-12 h-px bg-secondary" />
           </motion.div>
@@ -77,7 +77,7 @@ export function HeroSection() {
             transition={{ delay: 0.6 }}
             className="mt-6 text-cream/70 max-w-2xl mx-auto text-base md:text-lg leading-relaxed"
           >
-            Sevana Naturals supplies essential oils, attars, and aromatic raw
+            Sevana Naturals supplies essential oils and aromatic raw
             materials sourced from the Indo-Gangetic plain &mdash; the historic
             heartland of Indian mentha, vetiver, and floral perfumery.
           </motion.p>

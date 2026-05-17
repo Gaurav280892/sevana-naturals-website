@@ -14,9 +14,9 @@ export function Footer() {
               <Image
                 src="/images/logo.svg"
                 alt="Sevana Naturals"
-                width={160}
-                height={60}
-                className="h-12 w-auto brightness-0 invert"
+                width={200}
+                height={200}
+                className="h-12 w-auto invert"
               />
             </Link>
             <p className="mt-4 text-cream/70 font-sans italic text-lg">
@@ -79,7 +79,6 @@ export function Footer() {
                 "Mint Family",
                 "Aromatic Grasses",
                 "Specialty Naturals",
-                "Attars",
               ].map((item) => (
                 <li key={item}>
                   <Link

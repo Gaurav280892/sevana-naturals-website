@@ -30,7 +30,7 @@ export function Navigation() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-cream/95 backdrop-blur-md border-b border-border"
+          ? "bg-[#f8f6f1]/95 backdrop-blur-md border-b border-border"
           : "bg-transparent"
       }`}
     >
@@ -46,10 +46,10 @@ export function Navigation() {
               <Image
                 src="/images/logo.svg"
                 alt="Sevana Naturals"
-                width={180}
-                height={180}
-                className={`h-16 w-auto transition-all duration-300 ${
-                  scrolled || isOpen ? "" : "brightness-0 invert"
+                width={200}
+                height={200}
+                className={`h-12 w-auto transition-all duration-300 ${
+                  scrolled || isOpen ? "" : "invert"
                 }`}
                 priority
               />
