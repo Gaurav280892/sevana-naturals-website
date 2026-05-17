@@ -18,13 +18,21 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Sevana Naturals - Indian Essential Oils & Aromatic Raw Materials",
   description:
-    "Sevana Naturals supplies premium natural essential oils, attars, and aromatic raw materials from the Indo-Gangetic plain. Bareilly distilled. ISIPCA trained. Globally delivered.",
+    "Sevana Naturals supplies premium natural essential oils and aromatic raw materials from the Indo-Gangetic plain. Bareilly distilled. ISIPCA trained. Globally delivered.",
   keywords:
-    "essential oils India, ruh khus, vetiver oil, mentha oil, peppermint oil, lemongrass oil, citronella oil, attars, fragrance raw materials, India export",
+    "essential oils India, ruh khus, vetiver oil, mentha oil, peppermint oil, lemongrass oil, citronella oil, fragrance raw materials, India export",
   openGraph: {
     title: "Sevana Naturals - Indian Essential Oils for the World's Perfumers",
     description: "Bareilly distilled. ISIPCA trained. Globally delivered.",
     type: "website",
+  },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-icon.svg", type: "image/svg+xml" },
+    ],
   },
 };
 
