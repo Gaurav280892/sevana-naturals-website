@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -40,11 +41,18 @@ export function Navigation() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className={`font-sans text-2xl font-medium tracking-tight transition-colors duration-300 ${
-                scrolled || isOpen ? "text-primary" : "text-cream"
-              }`}
+              className="transition-all duration-300"
             >
-              Sevana<span className="font-normal italic"> Naturals</span>
+              <Image
+                src="/images/logo.svg"
+                alt="Sevana Naturals"
+                width={180}
+                height={180}
+                className={`h-16 w-auto transition-all duration-300 ${
+                  scrolled || isOpen ? "" : "brightness-0 invert"
+                }`}
+                priority
+              />
             </motion.div>
           </Link>
 

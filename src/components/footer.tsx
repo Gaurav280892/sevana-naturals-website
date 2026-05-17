@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight, Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
@@ -10,9 +11,13 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
-              <div className="font-sans text-2xl font-medium tracking-tight text-cream">
-                Sevana<span className="font-normal italic"> Naturals</span>
-              </div>
+              <Image
+                src="/images/logo.svg"
+                alt="Sevana Naturals"
+                width={160}
+                height={60}
+                className="h-12 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="mt-4 text-cream/70 font-sans italic text-lg">
               Bareilly distilled. ISIPCA trained. Globally delivered.
