@@ -53,29 +53,19 @@ export function HeroSection() {
 
           {/* Main Headline */}
           <h1 className="font-sans text-5xl md:text-7xl lg:text-8xl text-cream font-medium tracking-tight leading-[0.95] text-balance">
-            Indian naturals,
+            Indian naturals
             <br />
             <span className="italic font-normal text-cream/90">
-              properly understood.
+              to the world&apos;s noses.
             </span>
           </h1>
-
-          {/* Tagline */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="mt-8 font-sans text-xl md:text-2xl italic text-cream/80 max-w-xl mx-auto"
-          >
-            Bareilly distilled. ISIPCA trained. Globally delivered.
-          </motion.p>
 
           {/* Description */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-            className="mt-6 text-cream/70 max-w-2xl mx-auto text-base md:text-lg leading-relaxed"
+            transition={{ delay: 0.5 }}
+            className="mt-8 text-cream/70 max-w-2xl mx-auto text-base md:text-lg leading-relaxed"
           >
             Sevana Naturals supplies essential oils and aromatic raw
             materials sourced from the Indo-Gangetic plain &mdash; the historic

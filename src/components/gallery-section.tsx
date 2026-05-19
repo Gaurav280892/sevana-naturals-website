@@ -82,8 +82,8 @@ export function GallerySection() {
             className="relative h-[250px] group overflow-hidden"
           >
             <Image
-              src="/images/essential-oils.jpg"
-              alt="Artisanal essential oil bottles"
+              src="/images/perfumer-evaluation.jpg"
+              alt="Perfumer's evaluation bench with smelling strips"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700"
             />

@@ -66,38 +66,11 @@ export default function AboutPage() {
               className="lg:col-span-2 lg:sticky lg:top-32 lg:self-start"
             >
               <h2 className="font-sans text-4xl md:text-5xl text-primary font-medium tracking-tight leading-tight mb-2">
-                Sheetal Patel
+                Sheetal Sachan
               </h2>
               <span className="text-xs font-medium tracking-[0.3em] uppercase text-secondary block mb-6">
                 Founder & Perfumer
               </span>
-
-              <ul className="mt-8 pt-8 border-t border-border space-y-4 text-sm">
-                <li className="flex gap-4 text-ink-soft border-b border-border/50 border-dotted pb-4">
-                  <span className="font-sans italic text-ink-muted w-16">
-                    2018
-                  </span>
-                  ISIPCA, France — Advanced Perfumery
-                </li>
-                <li className="flex gap-4 text-ink-soft border-b border-border/50 border-dotted pb-4">
-                  <span className="font-sans italic text-ink-muted w-16">
-                    2019
-                  </span>
-                  Symrise, Paris — Fragrance Evaluation
-                </li>
-                <li className="flex gap-4 text-ink-soft border-b border-border/50 border-dotted pb-4">
-                  <span className="font-sans italic text-ink-muted w-16">
-                    2020
-                  </span>
-                  Founded Sevana Naturals
-                </li>
-                <li className="flex gap-4 text-ink-soft">
-                  <span className="font-sans italic text-ink-muted w-16">
-                    2024
-                  </span>
-                  30+ Countries Served
-                </li>
-              </ul>
             </motion.div>
 
             {/* Bio Content */}
@@ -109,50 +82,51 @@ export default function AboutPage() {
               className="lg:col-span-3 space-y-6 text-ink-soft leading-relaxed"
             >
               <p className="font-sans text-xl italic text-primary leading-relaxed">
-                I grew up in the aromatics trade — not by choice, but by osmosis.
-                My father ran a distillery in Bareilly when I was a child; my
-                earliest memories include the sharp green of spearmint and the
-                earthy damp of ruh khus lifted out of copper degs.
+                I grew up surrounded by the scent of mint and wet vetiver —
+                earthy, woody, mossy, with a warmth that still feels familiar
+                to me today.
               </p>
 
               <p>
-                After a business degree and a few years in corporate finance, I
-                found myself drawn back. I enrolled at ISIPCA in Versailles —
-                the premier school for perfumery — not to become a fine-fragrance
-                perfumer but to understand the language and the standards of the
-                people we sell to. That training changed everything.
+                Our warehouse was filled with drums of aromatic raw materials, 
+                and even my school bag carried the scent of mint so strongly 
+                that my friends would often point it out. In many ways, that 
+                was my first perfume.
               </p>
 
               <p>
-                What I learned in France — about evaluation, about documentation,
-                about the trust deficit international buyers face with Indian
-                supply — shaped the way Sevana operates. We don&apos;t just test
-                for adulterants; we test for olfactive integrity. We don&apos;t
-                just ship documents; we ship the story of every batch.
+                I also grew up watching farmers line up outside my father&apos;s
+                office, waiting to sell the oils they had worked hard to
+                produce. What my father built over four decades was never just 
+                a business — it was a relationship of trust between the land, 
+                the farmer, and the material itself.
               </p>
 
               <p>
-                Sevana was founded in 2020, during a time when global supply
-                chains were breaking and traceability suddenly mattered more than
-                ever. We were ready. Our procurement network — built across three
-                generations — was already structured for the transparency that
-                buyers began demanding.
+                Although I was always surrounded by natural aromatic materials,
+                it was only later, while studying perfumery and working in fine
+                fragrance evaluation and development internationally, that I
+                truly understood the scale and beauty of this industry. That 
+                experience made one thing very clear to me: natural materials 
+                bring a depth, texture, and emotional character to fragrance 
+                that cannot simply be replicated.
               </p>
 
               <p>
-                Today we supply perfumers, aromatherapists, and flavour houses
-                across twenty-five countries. Every shipment carries my personal
-                evaluation. If I wouldn&apos;t formulate with it, we don&apos;t
-                ship it.
+                Sevana was built at the intersection of two worlds: the
+                inherited depth of Indian aromatic sourcing and the precision
+                of international perfumery standards. Our purpose is to bring 
+                Indian aromatic materials to the world stage with the refinement, 
+                transparency, and technical understanding they deserve.
               </p>
 
               <div className="pt-8">
                 <Link
-                  href="/contact"
+                  href="/founders-desk"
                   className="group inline-flex items-center gap-3 text-primary font-medium tracking-wide hover:text-secondary transition-colors"
                 >
                   <span className="border-b border-current pb-1">
-                    Connect with me on LinkedIn
+                    Read the full founder&apos;s message
                   </span>
                   <ArrowRight
                     size={18}
@@ -181,11 +155,10 @@ export default function AboutPage() {
               Three generations of Indian aromatics.
             </h2>
             <p className="text-cream/80 leading-relaxed mb-6">
-              The Patel family has been in the Indian aromatics trade since 1986.
+              The family has been in the Indian aromatics trade since 1978.
               My father, <em className="text-cream">Yadvendra Patel</em>, founded
-              Sona Chemicals in Bareilly — one of the first companies in the
-              region to move from crude distillation to refined, export-grade
-              production.
+              Sona Chemicals in Bareilly — building a network of farmers and 
+              distillers across the mentha belt over forty-two years.
             </p>
             <p className="text-cream/80 leading-relaxed">
               My brother-in-law, <em className="text-cream">Prateek Patel</em>,
@@ -195,6 +168,21 @@ export default function AboutPage() {
               quality-first buyers who need documentation, traceability, and
               olfactive integrity at the source.
             </p>
+
+            <div className="pt-8">
+              <Link
+                href="/heritage"
+                className="group inline-flex items-center gap-3 text-cream font-medium tracking-wide hover:text-secondary transition-colors"
+              >
+                <span className="border-b border-current pb-1">
+                  Read the heritage story
+                </span>
+                <ArrowRight
+                  size={18}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
+              </Link>
+            </div>
           </motion.div>
 
           {/* Stats */}
@@ -206,10 +194,10 @@ export default function AboutPage() {
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { value: "1986", label: "Family Trade Started" },
-                { value: "6", label: "Districts Covered" },
+                { value: "42+", label: "Years in Industry" },
                 { value: "500+", label: "Farmer Partners" },
                 { value: "3", label: "Generations" },
+                { value: "25,000+", label: "Tons Sold" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -243,9 +231,11 @@ export default function AboutPage() {
             <h2 className="font-sans text-4xl md:text-5xl text-primary font-medium tracking-tight mb-6">
               Ready to work with us?
             </h2>
-            <p className="text-ink-soft max-w-xl mx-auto mb-8">
-              Whether you&apos;re a perfumer, flavour house, or aromatherapy
-              brand, we&apos;d love to hear about your requirements.
+            <p className="text-ink-soft max-w-2xl mx-auto mb-8">
+              Whether you&apos;re a consumer, perfumer, fragrance or flavour
+              house, aromatherapy brand, wellness company, cosmetic
+              manufacturer, retailer, wholesaler, distributor, or private
+              label brand, we&apos;d love to hear about your requirements.
             </p>
             <Link
               href="/contact"

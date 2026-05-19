@@ -81,12 +81,6 @@ const products = [
         desc: "Rich, fruity, and intensely aromatic. Harvested in South India during a narrow seasonal window. Essential for oriental and gourmand compositions.",
         tags: ["Fine Fragrance"],
       },
-      {
-        name: "Tagetes Oil",
-        latin: "Tagetes minuta",
-        desc: "African marigold — green, herbaceous, and slightly fruity. Used as a modifier in floral compositions and for its unique olfactive character.",
-        tags: ["Perfumery"],
-      },
     ],
   },
 ];

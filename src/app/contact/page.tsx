@@ -16,7 +16,6 @@ const oilOptions = [
   "Palmarosa oil",
   "Ruh khus (Indian vetiver)",
   "Davana absolute",
-  "Tagetes oil",
   "Rose attar (Kannauj)",
   "Jasmine sambac",
   "Tuberose absolute",
@@ -352,7 +351,7 @@ export default function ContactPage() {
                     LinkedIn
                   </h4>
                   <a
-                    href="https://www.linkedin.com/in/sheetal-patel-april"
+                    href="https://www.linkedin.com/in/sheetal-sachan"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-primary hover:text-secondary transition-colors"
@@ -372,7 +371,7 @@ export default function ContactPage() {
                       <rect width="4" height="12" x="2" y="9" />
                       <circle cx="4" cy="4" r="2" />
                     </svg>
-                    linkedin.com/in/sheetal-patel-april
+                    linkedin.com/in/sheetal-sachan
                   </a>
                   <p className="text-sm text-ink-muted mt-1">
                     Connect with our founder for direct conversation.

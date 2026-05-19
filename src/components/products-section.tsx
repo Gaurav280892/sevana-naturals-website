@@ -24,8 +24,8 @@ const categories = [
     num: "03",
     title: "Specialty Naturals",
     description:
-      "Ruh khus (wild-harvested North Indian vetiver), Kannauj rose attar, jasmine sambac, davana, tuberose — oils where Indian origin is irreplaceable.",
-    image: "/images/roses-jasmine.jpg",
+      "Ruh khus (wild-harvested North Indian vetiver), davana, and other oils where Indian origin is irreplaceable.",
+    image: "/images/vetiver-roots.jpg",
   },
 ];
 

@@ -23,6 +23,9 @@ export function HeritageSection() {
               <br />
               <span className="italic font-normal">in the trade.</span>
             </h2>
+            <p className="mt-4 font-sans text-lg italic text-cream/70">
+              From where the story of Sevana first began.
+            </p>
           </motion.div>
 
           {/* Right Column */}
@@ -33,33 +36,44 @@ export function HeritageSection() {
             transition={{ delay: 0.2 }}
           >
             <p className="font-sans text-xl md:text-2xl italic text-cream/90 leading-relaxed mb-6 max-w-xl">
-              Sevana is the next chapter of a family that has worked the Indian
-              aromatics trade for over thirty years.
+              Sevana is the export arm of a family that has worked the Indian
+              aromatics trade for over forty-two years.
             </p>
             <p className="text-cream/70 leading-relaxed mb-8 max-w-xl">
-              Our founder&apos;s father,{" "}
-              <em className="text-cream font-sans">Yadvendra Patel</em>, founded{" "}
-              <em className="text-cream font-sans">Sona Chemicals</em> in
-              Bareilly more than three decades ago; her brother-in-law{" "}
-              <em className="text-cream font-sans">Prateek Patel</em> runs the
-              allied house{" "}
-              <em className="text-cream font-sans">Sona Mint Overseas</em>. That
-              procurement network — built across thirty harvests, six districts,
-              and several hundred farmers and distillers — is what Sevana
-              inherits and structures for export.
+              What began on a single plot of land in Bareilly in 1978, with a
+              crop that earned the four idle months between February and June,
+              grew into a forty-two-year network of farmers, distillers, and
+              a discipline of dealing only in naturals. Sevana is the next
+              chapter — bringing that material to the world&apos;s fragrance and
+              flavour houses with the documentation and evaluation that
+              international perfumery expects.
             </p>
-            <Link
-              href="/about"
-              className="group inline-flex items-center gap-3 text-cream font-medium tracking-wide hover:text-secondary transition-colors"
-            >
-              <span className="border-b border-current pb-1">
-                Read the founder&apos;s story
-              </span>
-              <ArrowRight
-                size={18}
-                className="group-hover:translate-x-1 transition-transform"
-              />
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/founders-desk"
+                className="group inline-flex items-center gap-3 text-cream font-medium tracking-wide hover:text-secondary transition-colors"
+              >
+                <span className="border-b border-current pb-1">
+                  Read the founder&apos;s story
+                </span>
+                <ArrowRight
+                  size={18}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
+              </Link>
+              <Link
+                href="/heritage"
+                className="group inline-flex items-center gap-3 text-cream font-medium tracking-wide hover:text-secondary transition-colors"
+              >
+                <span className="border-b border-current pb-1">
+                  Read the heritage
+                </span>
+                <ArrowRight
+                  size={18}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
+              </Link>
+            </div>
           </motion.div>
         </div>
 
@@ -72,10 +86,10 @@ export function HeritageSection() {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: "30+", label: "Years in Trade" },
-              { value: "6", label: "Districts Covered" },
+              { value: "42+", label: "Years in Industry" },
               { value: "500+", label: "Farmer Partners" },
-              { value: "25+", label: "Countries Served" },
+              { value: "3", label: "Generations" },
+              { value: "25,000+", label: "Tons Sold" },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}

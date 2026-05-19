@@ -11,8 +11,6 @@ import {
   FileCheck,
   MapPin,
   Warehouse,
-  Shield,
-  Award,
 } from "lucide-react";
 
 const qualityPillars = [
@@ -39,29 +37,6 @@ const qualityPillars = [
     title: "Proper Storage",
     description:
       "Food-grade SS 304 drums, nitrogen-flushed headspace, PTFE-gasketed seals, dark and temperature-stable storage. No aluminium, no plastic for aging stock.",
-  },
-];
-
-const certifications = [
-  {
-    title: "CSIR-CIMAP",
-    description:
-      "Testing partnership with the Central Institute of Medicinal and Aromatic Plants, Lucknow — India's premier research institution for aromatic crops.",
-  },
-  {
-    title: "FFDC Kannauj",
-    description:
-      "Analysis and certification through the Fragrance & Flavour Development Centre — the nodal agency for India's essential oil industry.",
-  },
-  {
-    title: "ISO 9001:2015",
-    description:
-      "Quality management system certification ensuring consistent processes across procurement, testing, storage, and shipping.",
-  },
-  {
-    title: "FSSAI Licensed",
-    description:
-      "Food Safety and Standards Authority of India licensing for oils intended for flavour and food applications.",
   },
 ];
 
@@ -247,46 +222,6 @@ export default function QualityPage() {
                 </li>
               </ul>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications */}
-      <section className="py-24 lg:py-32 bg-cream-deep">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-2xl mb-16"
-          >
-            <span className="text-xs font-medium tracking-[0.3em] uppercase text-secondary mb-4 block">
-              Certifications
-            </span>
-            <h2 className="font-sans text-4xl md:text-5xl text-primary font-medium tracking-tight leading-tight">
-              Partnered with India&apos;s premier institutions.
-            </h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {certifications.map((cert, index) => (
-              <motion.article
-                key={cert.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="p-8 bg-cream border border-border"
-              >
-                <Award size={24} className="text-secondary mb-4" />
-                <h3 className="font-sans text-xl text-primary font-medium mb-3">
-                  {cert.title}
-                </h3>
-                <p className="text-ink-soft leading-relaxed">
-                  {cert.description}
-                </p>
-              </motion.article>
-            ))}
           </div>
         </div>
       </section>

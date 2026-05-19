@@ -25,7 +25,7 @@ export function QuoteSection() {
           <footer className="mt-8 pl-8">
             <cite className="not-italic">
               <span className="block text-primary font-medium">
-                Sheetal Patel
+                Sheetal Sachan
               </span>
               <span className="text-ink-muted text-sm tracking-wide">
                 Founder, Sevana Naturals
