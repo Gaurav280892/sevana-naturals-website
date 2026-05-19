@@ -20,7 +20,7 @@ export function Footer() {
               />
             </Link>
             <p className="mt-4 text-cream/70 font-sans italic text-lg">
-              Bareilly distilled. ISIPCA trained. Globally delivered.
+              India distilled. ISIPCA trained. Globally delivered.
             </p>
             <div className="mt-6 flex flex-col gap-3 text-sm text-cream/80">
               <a
