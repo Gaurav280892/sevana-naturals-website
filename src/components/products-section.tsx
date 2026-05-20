@@ -25,7 +25,7 @@ const categories = [
     title: "Specialty Naturals",
     description:
       "Ruh khus (wild-harvested North Indian vetiver), davana, and other oils where Indian origin is irreplaceable.",
-    image: "/images/vetiver-roots.jpg",
+    image: "/images/vetiver-plant.jpg",
   },
 ];
 

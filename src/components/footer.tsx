@@ -14,13 +14,13 @@ export function Footer() {
               <Image
                 src="/images/logo.svg"
                 alt="Sevana Naturals"
-                width={200}
-                height={200}
-                className="h-12 w-auto invert"
+                width={400}
+                height={400}
+                className="h-[120px] w-auto invert"
               />
             </Link>
             <p className="mt-4 text-cream/70 font-sans italic text-lg">
-              Bareilly distilled. ISIPCA trained. Globally delivered.
+              India distilled. ISIPCA trained. Globally delivered.
             </p>
             <div className="mt-6 flex flex-col gap-3 text-sm text-cream/80">
               <a

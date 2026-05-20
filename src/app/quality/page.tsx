@@ -87,8 +87,8 @@ export default function QualityPage() {
               className="relative h-[400px] lg:h-[500px]"
             >
               <Image
-                src="/images/essential-oils.jpg"
-                alt="Laboratory testing"
+                src="/images/lab-testing.jpg"
+                alt="Essential oil quality testing laboratory"
                 fill
                 className="object-cover"
               />
