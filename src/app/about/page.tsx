@@ -161,12 +161,11 @@ export default function AboutPage() {
               distillers across the mentha belt over forty-two years.
             </p>
             <p className="text-cream/80 leading-relaxed">
-              My brother-in-law, <em className="text-cream">Prateek Patel</em>,
-              now runs Sona Mint Overseas, expanding the family&apos;s reach into
-              international markets. Sevana is the third chapter — built on the
-              same procurement network, but structured specifically for
-              quality-first buyers who need documentation, traceability, and
-              olfactive integrity at the source.
+              Sevana builds on that same foundation — the relationships, the 
+              sourcing network, and the deep understanding of Indian naturals 
+              that only comes from decades of work in the field. What we bring 
+              is a renewed focus on quality-first buyers who need documentation, 
+              traceability, and olfactive integrity at the source.
             </p>
 
             <div className="pt-8">
