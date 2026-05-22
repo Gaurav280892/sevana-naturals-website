@@ -81,6 +81,18 @@ const products = [
         desc: "Rich, fruity, and intensely aromatic. Harvested in South India during a narrow seasonal window. Essential for oriental and gourmand compositions.",
         tags: ["Fine Fragrance"],
       },
+      {
+        name: "Geranium Oil",
+        latin: "Pelargonium graveolens",
+        desc: "Rose-like floral with green, minty undertones. Steam-distilled from Indian-grown geranium. Widely used in perfumery, skincare, and aromatherapy formulations.",
+        tags: ["Perfumery", "Cosmetics"],
+      },
+      {
+        name: "Lemon Oil",
+        latin: "Citrus limon",
+        desc: "Cold-pressed Indian lemon oil — bright, zesty, and refreshing. High limonene content. Essential for flavour applications, household fragrances, and aromatherapy.",
+        tags: ["Flavour", "Aromatherapy"],
+      },
     ],
   },
 ];
