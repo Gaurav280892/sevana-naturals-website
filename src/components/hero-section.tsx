@@ -52,7 +52,7 @@ export function HeroSection() {
           </motion.div>
 
           {/* Main Headline */}
-          <h1 className="font-sans text-5xl md:text-7xl lg:text-8xl text-cream font-medium tracking-tight leading-[0.95] text-balance">
+          <h1 className="font-sans text-6xl md:text-8xl lg:text-9xl text-cream font-medium tracking-tight leading-[0.95] text-balance">
             Indian naturals,
             <br />
             <span className="italic font-normal text-cream/90">

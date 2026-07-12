@@ -3,6 +3,7 @@
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function FoundersDeskPage() {
   return (
@@ -28,13 +29,41 @@ export default function FoundersDeskPage() {
 
       {/* Content */}
       <section className="py-16 lg:py-24 bg-cream">
-        <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <motion.article
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="prose prose-lg max-w-none"
-          >
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 items-start">
+            {/* Photo Column */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="lg:col-span-1"
+            >
+              <div className="relative w-full aspect-[3/4] overflow-hidden">
+                <Image
+                  src="/images/sheetal-sachan.jpg"
+                  alt="Sheetal Sachan, Founder"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div className="mt-6">
+                <h3 className="font-sans text-lg text-primary font-medium">
+                  Sheetal Sachan
+                </h3>
+                <p className="text-ink-muted text-sm mt-2">
+                  Founder & Managing Director
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Text Column */}
+            <motion.article
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="lg:col-span-3 prose prose-lg max-w-none"
+            >
             <p className="text-ink-soft text-lg md:text-xl leading-relaxed mb-8">
               I grew up surrounded by the scent of mint and wet vetiver —
               earthy, woody, mossy, with a warmth that still feels familiar
@@ -131,7 +160,8 @@ export default function FoundersDeskPage() {
                 Founder & Managing Director, Sevana Naturals
               </p>
             </div>
-          </motion.article>
+            </motion.article>
+          </div>
         </div>
       </section>
 
