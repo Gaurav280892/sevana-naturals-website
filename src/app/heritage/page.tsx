@@ -44,7 +44,7 @@ export default function HeritagePage() {
             {/* Photo on left */}
             <div className="md:w-2/5 flex-shrink-0">
               <Image
-                src="/images/yadvendra-patel.jpg"
+                src="/images/yadvendra-patel-new.jpg"
                 alt="Yadvendra Patel"
                 width={400}
                 height={533}

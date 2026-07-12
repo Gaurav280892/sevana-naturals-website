@@ -14,9 +14,9 @@ export function Footer() {
               <Image
                 src="/images/logo.svg"
                 alt="Sevana Naturals"
-                width={400}
-                height={400}
-                className="h-[120px] w-auto invert"
+                width={500}
+                height={500}
+                className="h-[160px] w-auto invert"
               />
             </Link>
             <p className="mt-4 text-cream/70 font-sans italic text-lg">
