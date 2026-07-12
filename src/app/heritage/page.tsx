@@ -219,15 +219,21 @@ export default function HeritagePage() {
             </div>
           </motion.article>
 
-          {/* Video Placeholder - at the bottom */}
+          {/* Video Section - at the bottom */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="mt-12 mb-8"
           >
-            <div className="aspect-[16/9] max-w-xl mx-auto border-2 border-dashed border-secondary/40 flex items-center justify-center bg-cream-deep">
-              <p className="text-ink-muted text-sm italic">Video coming soon</p>
+            <div className="aspect-[16/9] max-w-2xl mx-auto overflow-hidden rounded-lg shadow-lg">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/vGIJ5HXtVsc"
+                title="Sevana Naturals Heritage Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </motion.div>
         </div>
