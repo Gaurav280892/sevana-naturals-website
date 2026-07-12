@@ -11,8 +11,8 @@ export default function FoundersDeskPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 lg:pb-20 bg-cream">
-        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+      <section className="pt-48 pb-8 bg-cream">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -27,68 +27,75 @@ export default function FoundersDeskPage() {
         </div>
       </section>
 
-      {/* Content */}
-      <section className="py-16 lg:py-24 bg-cream">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 items-start">
-            {/* Photo Column */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="lg:col-span-1"
-            >
-              <div className="relative w-full aspect-[3/4] overflow-hidden">
+      {/* Content Section */}
+      <section className="py-8 bg-cream">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            {/* Grid layout for photo + text wrapping */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 auto-rows-max">
+              {/* Photo: spans 2 columns on large screens */}
+              <div className="lg:col-span-2 lg:row-span-3">
                 <Image
                   src="/images/sheetal-sachan.jpg"
                   alt="Sheetal Sachan, Founder"
-                  fill
-                  className="object-cover"
-                  priority
+                  width={400}
+                  height={533}
+                  className="w-full h-auto object-cover"
                 />
               </div>
-              <div className="mt-6">
-                <h3 className="font-sans text-lg text-primary font-medium">
-                  Sheetal Sachan
-                </h3>
-                <p className="text-ink-muted text-sm mt-2">
-                  Founder & Managing Director
+
+              {/* Name and title: spans 3 columns */}
+              <div className="lg:col-span-3">
+                <p className="text-primary font-medium text-xl">Sheetal Sachan</p>
+                <p className="text-ink-muted text-sm mb-6">
+                  Founder & Managing Director, Sevana Naturals
                 </p>
               </div>
-            </motion.div>
 
-            {/* Text Column */}
-            <motion.article
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="lg:col-span-3 prose prose-lg max-w-none"
-            >
-            <p className="text-ink-soft text-lg md:text-xl leading-relaxed mb-8">
-              I grew up surrounded by the scent of mint and wet vetiver —
-              earthy, woody, mossy, with a warmth that still feels familiar
-              to me today. Our warehouse was filled with drums of aromatic
-              raw materials, and even my school bag carried the scent of mint
-              so strongly that my friends would often point it out. In many
-              ways, that was my first perfume.
-            </p>
+              {/* First paragraph: spans 3 columns */}
+              <div className="lg:col-span-3">
+                <p className="text-ink-soft text-lg leading-relaxed mb-6">
+                  I grew up surrounded by the scent of mint and wet vetiver —
+                  earthy, woody, mossy, with a warmth that still feels familiar
+                  to me today. Our warehouse was filled with drums of aromatic
+                  raw materials, and even my school bag carried the scent of mint
+                  so strongly that my friends would often point it out. In many
+                  ways, that was my first perfume.
+                </p>
+              </div>
 
-            <p className="text-ink-soft text-lg md:text-xl leading-relaxed mb-8">
-              I also grew up watching farmers line up outside my father&apos;s
-              office, waiting to sell the oils they had worked hard to
-              produce. Some arrived carrying small blue cans; others came
-              with larger quantities after an entire season&apos;s harvest. What
-              my father built over four decades was never just a business —
-              it was a relationship of trust between the land, the farmer,
-              and the material itself.
-            </p>
+              {/* Second paragraph: spans 3 columns */}
+              <div className="lg:col-span-3">
+                <p className="text-ink-soft text-lg leading-relaxed mb-8">
+                  I also grew up watching farmers line up outside my father&apos;s
+                  office, waiting to sell the oils they had worked hard to
+                  produce. Some arrived carrying small blue cans; others came
+                  with larger quantities after an entire season&apos;s harvest. What
+                  my father built over four decades was never just a business —
+                  it was a relationship of trust between the land, the farmer,
+                  and the material itself.
+                </p>
+              </div>
+            </div>
+          </motion.div>
 
+          {/* Continuing text */}
+          <motion.article
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none mt-8"
+          >
             {/* Divider */}
             <div className="my-12 flex justify-center">
               <div className="w-24 h-px bg-secondary" />
             </div>
 
-            <p className="text-ink-soft text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-ink-soft text-lg leading-relaxed mb-8">
               Although I was always surrounded by natural aromatic materials,
               it was only later, while studying perfumery and working in fine
               fragrance evaluation and development internationally, that I
@@ -100,17 +107,17 @@ export default function FoundersDeskPage() {
               character to fragrance that cannot simply be replicated.
             </p>
 
-            <p className="text-ink-soft text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-ink-soft text-lg leading-relaxed mb-8">
               That realization became the foundation of Sevana.
             </p>
 
-            <p className="text-ink-soft text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-ink-soft text-lg leading-relaxed mb-8">
               Sevana was built at the intersection of two worlds: the
               inherited depth of Indian aromatic sourcing and the precision
               of international perfumery standards.
             </p>
 
-            <p className="text-ink-soft text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-ink-soft text-lg leading-relaxed mb-8">
               Our purpose is not only to preserve a legacy built over
               generations, but to bring Indian aromatic materials to the
               world stage with the refinement, transparency, and technical
@@ -124,14 +131,14 @@ export default function FoundersDeskPage() {
               <div className="w-24 h-px bg-secondary" />
             </div>
 
-            <p className="text-ink-soft text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-ink-soft text-lg leading-relaxed mb-8">
               To me, Sevana should stand for one thing above all else:
               trust. Trust in quality. Trust in olfactive integrity. Trust
               in sourcing. Trust that what reaches a perfumer&apos;s palette is
               exactly what it claims to be.
             </p>
 
-            <p className="text-ink-soft text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-ink-soft text-lg leading-relaxed mb-8">
               My father often says:
             </p>
 
@@ -147,7 +154,7 @@ export default function FoundersDeskPage() {
               </p>
             </blockquote>
 
-            <p className="text-ink-soft text-lg md:text-xl leading-relaxed mb-12">
+            <p className="text-ink-soft text-lg leading-relaxed mb-8">
               That is the inheritance I am carrying forward through Sevana.
             </p>
 
@@ -160,8 +167,7 @@ export default function FoundersDeskPage() {
                 Founder & Managing Director, Sevana Naturals
               </p>
             </div>
-            </motion.article>
-          </div>
+          </motion.article>
         </div>
       </section>
 
