@@ -194,18 +194,12 @@ export default function HeritagePage() {
             {/* Pull Quote 3 */}
             <blockquote className="my-10 pl-6 border-l-2 border-secondary">
               <p className="font-sans text-2xl md:text-3xl italic text-primary leading-snug">
-                &ldquo;Be known for naturals. The industry will continue to
-                evolve, and as research advances, new ingredients and
-                innovations will emerge. But the demand for natural
-                materials — with their depth, character, and authenticity —
-                will always remain. Both will coexist. Keep advancing the
-                knowledge, refining the technique, and never compromise
-                the substance. This trade runs on trust — protect it.&rdquo;
+                &ldquo;Be known for naturals. Never compromise on the quality of what goes into our bottles, and never forget the face of the farmer who brought that harvest to our door. This is not just a business — it is a lineage of trust.&rdquo;
               </p>
             </blockquote>
 
             <p className="text-ink-soft text-lg leading-relaxed mb-8">
-              That is the inheritance I am passing on.
+              Forty-two years of that conviction, now entrusted to the next generation.
             </p>
 
             {/* Attribution */}
