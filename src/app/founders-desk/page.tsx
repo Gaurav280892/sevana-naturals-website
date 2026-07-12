@@ -41,13 +41,23 @@ export default function FoundersDeskPage() {
                 Sevana began long before it had a name.
               </p>
 
-              <p className="text-ink-soft text-lg leading-relaxed mb-8">
+              <p className="text-ink-soft text-lg leading-relaxed mb-6">
                 I grew up surrounded by the scent of mint and wet vetiver —
                 earthy, woody, mossy, with a warmth that still feels familiar
                 to me today. Our warehouse was filled with drums of aromatic
                 raw materials, and even my school bag carried the scent of mint
                 so strongly that my friends would often point it out. In many
                 ways, that was my first perfume.
+              </p>
+
+              <p className="text-ink-soft text-lg leading-relaxed mb-8">
+                I also grew up watching farmers line up outside my father&apos;s
+                office, waiting to sell the oils they had worked hard to
+                produce. Some arrived carrying small blue cans; others came
+                with larger quantities after an entire season&apos;s harvest. What
+                my father built over four decades was never just a business —
+                it was a relationship of trust between the land, the farmer,
+                and the material itself.
               </p>
             </div>
           </motion.div>
@@ -59,16 +69,6 @@ export default function FoundersDeskPage() {
             viewport={{ once: true }}
             className="prose prose-lg max-w-none"
           >
-
-            <p className="text-ink-soft text-lg leading-relaxed mb-8">
-              I also grew up watching farmers line up outside my father&apos;s
-              office, waiting to sell the oils they had worked hard to
-              produce. Some arrived carrying small blue cans; others came
-              with larger quantities after an entire season&apos;s harvest. What
-              my father built over four decades was never just a business —
-              it was a relationship of trust between the land, the farmer,
-              and the material itself.
-            </p>
 
             {/* Divider */}
             <div className="my-12 flex justify-center">
