@@ -36,84 +36,77 @@ export function Navigation() {
           : "bg-transparent"
       }`}
     >
-      <div className="w-full">
-        {/* Logo Section */}
-        <div className={`${scrolled ? "py-3" : "py-6"} transition-all duration-300`}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 flex justify-center">
-            <Link href="/" className="relative z-50">
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="transition-all duration-300"
-              >
-                <Image
-                  src="/images/logo.svg"
-                  alt="Sevana Naturals"
-                  width={scrolled ? 300 : 400}
-                  height={scrolled ? 300 : 400}
-                  className={`${scrolled ? "h-16" : "h-32"} w-auto transition-all duration-300 ${
-                    scrolled || isOpen ? "" : "invert"
-                  }`}
-                  priority
-                />
-              </motion.div>
-            </Link>
-          </div>
-        </div>
-
-        {/* Navigation Menu */}
-        <nav className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
-            {/* Desktop Navigation */}
-            <ul className="hidden lg:flex items-center gap-12 w-full justify-center">
-              {navLinks.map((link, i) => (
-                <motion.li
-                  key={link.href}
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.05 }}
-                >
-                  <Link
-                    href={link.href}
-                    className={`text-sm font-medium tracking-wider uppercase link-underline transition-colors duration-300 ${
-                      scrolled ? "text-ink" : "text-cream/90 hover:text-cream"
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                </motion.li>
-              ))}
-            </ul>
-
-            {/* CTA Button - Desktop */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <nav className="flex items-center justify-between h-24">
+          {/* Logo */}
+          <Link href="/" className="relative z-50">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="hidden lg:block absolute right-8"
+              className="transition-all duration-300"
             >
-              <Link
-                href="/contact"
-                className={`text-xs font-medium tracking-widest uppercase px-6 py-3 border transition-all duration-300 ${
-                  scrolled
-                    ? "border-primary text-primary hover:bg-primary hover:text-cream"
-                    : "border-cream/50 text-cream hover:bg-cream hover:text-primary"
+              <Image
+                src="/images/logo.svg"
+                alt="Sevana Naturals"
+                width={280}
+                height={280}
+                className={`h-20 w-auto transition-all duration-300 ${
+                  scrolled || isOpen ? "" : "invert"
                 }`}
-              >
-                Request Sample
-              </Link>
+                priority
+              />
             </motion.div>
+          </Link>
 
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className={`lg:hidden relative z-50 p-2 transition-colors duration-300 ml-auto ${
-                scrolled || isOpen ? "text-primary" : "text-cream"
+          {/* Desktop Navigation */}
+          <ul className="hidden lg:flex items-center gap-10">
+            {navLinks.map((link, i) => (
+              <motion.li
+                key={link.href}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <Link
+                  href={link.href}
+                  className={`text-sm font-medium tracking-wider uppercase link-underline transition-colors duration-300 ${
+                    scrolled ? "text-ink" : "text-cream/90 hover:text-cream"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              </motion.li>
+            ))}
+          </ul>
+
+          {/* CTA Button - Desktop */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="hidden lg:block"
+          >
+            <Link
+              href="/contact"
+              className={`text-xs font-medium tracking-widest uppercase px-6 py-3 border transition-all duration-300 ${
+                scrolled
+                  ? "border-primary text-primary hover:bg-primary hover:text-cream"
+                  : "border-cream/50 text-cream hover:bg-cream hover:text-primary"
               }`}
-              aria-label="Toggle menu"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+              Request Sample
+            </Link>
+          </motion.div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className={`lg:hidden relative z-50 p-2 transition-colors duration-300 ${
+              scrolled || isOpen ? "text-primary" : "text-cream"
+            }`}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </nav>
       </div>
 
