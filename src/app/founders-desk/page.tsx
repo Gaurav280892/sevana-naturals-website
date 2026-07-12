@@ -10,55 +10,76 @@ export default function FoundersDeskPage() {
     <main>
       <Navigation />
 
-      {/* Content */}
-      <section className="pt-32 pb-8 bg-cream">
+      {/* Hero Section */}
+      <section className="pt-48 pb-8 bg-cream">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <span className="text-xs font-medium tracking-[0.3em] uppercase text-secondary mb-4 block">
+              From the Founder&apos;s Desk
+            </span>
+            <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl text-primary font-medium tracking-tight leading-[0.95]">
+              Sevana began long before it had a name.
+            </h1>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Content Section */}
+      <section className="py-8 bg-cream">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="flex flex-col md:flex-row gap-8"
           >
-            {/* Photo on left */}
-            <div className="md:w-2/5 flex-shrink-0">
-              <Image
-                src="/images/sheetal-sachan.jpg"
-                alt="Sheetal Sachan, Founder"
-                width={400}
-                height={533}
-                className="w-full h-auto object-cover"
-              />
-            </div>
-            
-            {/* Name and beginning of text on right */}
-            <div className="md:w-3/5">
-              <p className="text-primary font-medium text-xl">Sheetal Sachan</p>
-              <p className="text-ink-muted text-sm mb-6">
-                Founder & Managing Director, Sevana Naturals
-              </p>
-              
-              <p className="text-ink-soft text-lg leading-relaxed mb-6">
-                Sevana began long before it had a name.
-              </p>
+            {/* Grid layout for photo + text wrapping */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 auto-rows-max">
+              {/* Photo: spans 2 columns on large screens */}
+              <div className="lg:col-span-2 lg:row-span-3">
+                <Image
+                  src="/images/sheetal-sachan.jpg"
+                  alt="Sheetal Sachan, Founder"
+                  width={400}
+                  height={533}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
 
-              <p className="text-ink-soft text-lg leading-relaxed mb-6">
-                I grew up surrounded by the scent of mint and wet vetiver —
-                earthy, woody, mossy, with a warmth that still feels familiar
-                to me today. Our warehouse was filled with drums of aromatic
-                raw materials, and even my school bag carried the scent of mint
-                so strongly that my friends would often point it out. In many
-                ways, that was my first perfume.
-              </p>
+              {/* Name and title: spans 3 columns */}
+              <div className="lg:col-span-3">
+                <p className="text-primary font-medium text-xl">Sheetal Sachan</p>
+                <p className="text-ink-muted text-sm mb-6">
+                  Founder & Managing Director, Sevana Naturals
+                </p>
+              </div>
 
-              <p className="text-ink-soft text-lg leading-relaxed mb-8">
-                I also grew up watching farmers line up outside my father&apos;s
-                office, waiting to sell the oils they had worked hard to
-                produce. Some arrived carrying small blue cans; others came
-                with larger quantities after an entire season&apos;s harvest. What
-                my father built over four decades was never just a business —
-                it was a relationship of trust between the land, the farmer,
-                and the material itself.
-              </p>
+              {/* First paragraph: spans 3 columns */}
+              <div className="lg:col-span-3">
+                <p className="text-ink-soft text-lg leading-relaxed mb-6">
+                  I grew up surrounded by the scent of mint and wet vetiver —
+                  earthy, woody, mossy, with a warmth that still feels familiar
+                  to me today. Our warehouse was filled with drums of aromatic
+                  raw materials, and even my school bag carried the scent of mint
+                  so strongly that my friends would often point it out. In many
+                  ways, that was my first perfume.
+                </p>
+              </div>
+
+              {/* Second paragraph: spans 3 columns */}
+              <div className="lg:col-span-3">
+                <p className="text-ink-soft text-lg leading-relaxed mb-8">
+                  I also grew up watching farmers line up outside my father&apos;s
+                  office, waiting to sell the oils they had worked hard to
+                  produce. Some arrived carrying small blue cans; others came
+                  with larger quantities after an entire season&apos;s harvest. What
+                  my father built over four decades was never just a business —
+                  it was a relationship of trust between the land, the farmer,
+                  and the material itself.
+                </p>
+              </div>
             </div>
           </motion.div>
 
@@ -67,9 +88,8 @@ export default function FoundersDeskPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="prose prose-lg max-w-none"
+            className="prose prose-lg max-w-none mt-8"
           >
-
             {/* Divider */}
             <div className="my-12 flex justify-center">
               <div className="w-24 h-px bg-secondary" />
@@ -111,14 +131,14 @@ export default function FoundersDeskPage() {
               <div className="w-24 h-px bg-secondary" />
             </div>
 
-            <p className="text-ink-soft text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-ink-soft text-lg leading-relaxed mb-8">
               To me, Sevana should stand for one thing above all else:
               trust. Trust in quality. Trust in olfactive integrity. Trust
               in sourcing. Trust that what reaches a perfumer&apos;s palette is
               exactly what it claims to be.
             </p>
 
-            <p className="text-ink-soft text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-ink-soft text-lg leading-relaxed mb-8">
               My father often says:
             </p>
 
@@ -147,7 +167,7 @@ export default function FoundersDeskPage() {
                 Founder & Managing Director, Sevana Naturals
               </p>
             </div>
-            </motion.article>
+          </motion.article>
         </div>
       </section>
 
