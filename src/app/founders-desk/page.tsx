@@ -37,8 +37,17 @@ export default function FoundersDeskPage() {
                 Founder & Managing Director, Sevana Naturals
               </p>
               
-              <p className="text-ink-soft text-lg leading-relaxed">
+              <p className="text-ink-soft text-lg leading-relaxed mb-6">
                 Sevana began long before it had a name.
+              </p>
+
+              <p className="text-ink-soft text-lg leading-relaxed mb-8">
+                I grew up surrounded by the scent of mint and wet vetiver —
+                earthy, woody, mossy, with a warmth that still feels familiar
+                to me today. Our warehouse was filled with drums of aromatic
+                raw materials, and even my school bag carried the scent of mint
+                so strongly that my friends would often point it out. In many
+                ways, that was my first perfume.
               </p>
             </div>
           </motion.div>
@@ -48,16 +57,8 @@ export default function FoundersDeskPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-8 prose prose-lg max-w-none"
+            className="prose prose-lg max-w-none"
           >
-            <p className="text-ink-soft text-lg leading-relaxed mb-8">
-              I grew up surrounded by the scent of mint and wet vetiver —
-              earthy, woody, mossy, with a warmth that still feels familiar
-              to me today. Our warehouse was filled with drums of aromatic
-              raw materials, and even my school bag carried the scent of mint
-              so strongly that my friends would often point it out. In many
-              ways, that was my first perfume.
-            </p>
 
             <p className="text-ink-soft text-lg leading-relaxed mb-8">
               I also grew up watching farmers line up outside my father&apos;s
