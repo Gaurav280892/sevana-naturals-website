@@ -28,6 +28,18 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Lock body scroll while the mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -99,34 +111,57 @@ export function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => setIsOpen(true)}
             className={`lg:hidden relative z-50 p-2 transition-colors duration-300 ${
-              scrolled || isOpen ? "text-primary" : "text-cream"
+              scrolled ? "text-primary" : "text-cream"
             }`}
-            aria-label="Toggle menu"
+            aria-label="Open menu"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            <Menu size={24} />
           </button>
         </nav>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - self-contained full-screen opaque overlay */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-cream z-40 lg:hidden"
+            transition={{ duration: 0.25 }}
+            className="fixed inset-0 z-[60] h-[100dvh] w-screen bg-cream lg:hidden overflow-y-auto"
           >
-            <div className="flex flex-col items-center justify-center h-full">
+            {/* Overlay top bar with logo + close */}
+            <div className="flex items-center justify-between h-24 px-6">
+              <Link href="/" onClick={() => setIsOpen(false)}>
+                <Image
+                  src="/images/logo.svg"
+                  alt="Sevana Naturals"
+                  width={280}
+                  height={280}
+                  className="h-20 w-auto"
+                  priority
+                />
+              </Link>
+              <button
+                onClick={() => setIsOpen(false)}
+                className="p-2 text-primary"
+                aria-label="Close menu"
+              >
+                <X size={24} />
+              </button>
+            </div>
+
+            {/* Menu items */}
+            <div className="flex flex-col items-center justify-center gap-8 px-6 pt-8 pb-16">
               <ul className="flex flex-col items-center gap-8">
                 {navLinks.map((link, i) => (
                   <motion.li
                     key={link.href}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.1 }}
+                    transition={{ delay: i * 0.05 }}
                   >
                     <Link
                       href={link.href}
@@ -138,20 +173,13 @@ export function Navigation() {
                   </motion.li>
                 ))}
               </ul>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.5 }}
-                className="mt-12"
+              <Link
+                href="/contact"
+                onClick={() => setIsOpen(false)}
+                className="mt-4 text-xs font-medium tracking-widest uppercase px-8 py-4 border border-primary text-primary hover:bg-primary hover:text-cream transition-all"
               >
-                <Link
-                  href="/contact"
-                  onClick={() => setIsOpen(false)}
-                  className="text-xs font-medium tracking-widest uppercase px-8 py-4 border border-primary text-primary hover:bg-primary hover:text-cream transition-all"
-                >
-                  Request Sample
-                </Link>
-              </motion.div>
+                Request Sample
+              </Link>
             </div>
           </motion.div>
         )}
